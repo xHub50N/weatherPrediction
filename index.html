@@ -1,23 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artificial Intelligence project</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #9965f8, #2196F3);
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
 </head>
 <body>
-    <iframe src="KNN_WeatherPrediction.pdf"></iframe>
+    <h1>Weather prediction</h1>
+<div class="button-container">
+  <a href="KNN_WeatherPrediction.pdf" class="button" target="_blank">Dokumentacja w wersji Polskiej</a>
+  <a href="SSI_ENGLISH_ARTICLE.pdf" class="button" target="_blank">Article about comparision KNN and Naive Bayes classifier</a>
+</div>
+
 </body>
 </html>
